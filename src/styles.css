@@ -238,6 +238,7 @@ p {
     display: flex;
     justify-content: space-around;
     padding: 80px;
+    background: linear-gradient(180deg, #FF99CC, #E0D753);
 }
 
 .alt-sub-section {
@@ -245,6 +246,7 @@ p {
     flex-direction: column;
     text-align: center;
     padding: 80px;
+    background: linear-gradient(180deg, #E0D753,  white);
 }
 
 .shot {
@@ -364,7 +366,21 @@ a {
 footer {
     background-color: #100F1A;
     color: #E0D753;
-    height: 400px;
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.size {
+    font-size: 13px;
+    opacity: 0.7;
 }
 
 /*.contact-box {
