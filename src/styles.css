@@ -255,17 +255,14 @@ p {
     display: flex;
     justify-content: space-around;
     padding: 80px;
-    background: linear-gradient(180deg, #FF99CC, #E0D753);
+    background: linear-gradient(180deg, #FF99CC, #E0D753, rgb(204, 204, 255));
 }
-/*ABOUT SECTION ENDS HERE*/
 
-/*PROJECT SECTION STARTS HERE*/
-.alt-sub-section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 80px;
-    background: linear-gradient(180deg, #E0D753,  white);
+@media only screen and (max-width: 1000px) {
+    .sub-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .shot {
@@ -278,8 +275,24 @@ p {
     align-items: center;
 }
 
+@media only screen and (max-width: 1000px) {
+    .shot {
+        max-width: 100%;
+    }
+}
+/*ABOUT SECTION ENDS HERE*/
+
+/*PROJECT SECTION STARTS HERE*/
+.alt-sub-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(180deg, rgb(204, 204, 255),  white);
+}
+
 .project-tile {
-    width: 300px;
+    width: auto;
     height: 500px;
     box-shadow: 5px 5px 20px gray;
     margin: 10px;
@@ -287,7 +300,9 @@ p {
 
 .project-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 80px;
 }
 
 @media only screen and (max-width: 1000px) {
