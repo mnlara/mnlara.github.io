@@ -1,0 +1,35 @@
+decide what main colors to use. (black, green, blue, pink, red, gold)
+
+can have text animated to type pretext as soon as page loads
+
+any button can add a glow to it
+
+for project section: can ask R how float tilts 
+
+different ideas that can be integrated
+https://www.getresponse.com/blog/online-portfolio-examples
+
+use the idea to make the background color into an image and keep the content on a small block centered
+https://patflynn.com/
+
+simple idea references
+https://hellojohnolson.com/gallery
+https://www.behance.net/hellojohnolson
+
+
+create a custom cursor
+
+
+have a "hello and welcome" as a text typing animation in the center of the page for when the page loads in
+have the page do a loading animation so all other content loaded in as soon as the text typing animations finishs
+keep the text typing animmation on loop after everything on the page has already loaded in
+
+https://color.adobe.com/create/color-wheel
+
+add up arrow
+
+js c/folder?
+
+https://formsubmit.co/
+
+https://webflow.com/?gspk=YWFyb25ncmlldmU2NjE0&gsxid=Xax8sSeiChfQ&utm_medium=affiliate

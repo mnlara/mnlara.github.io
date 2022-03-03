@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73c36f1a62.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <!--<img class="logo" src="src/images/logo3.PNG" alt="logo"/>-->
+            <div class="socials">
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/melanie-lara-18735221b?trk=people-guest_people_search-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#a0a0a0"width="30" height="30" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/m-lara2020">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#a0a0a0"width="30" height="30" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <ul id="nav-list">
+                <li><a class="li-color" href="#about-me">About Me</a></li>
+                <li><a class="li-color" href="#projects">Projects</a></li>
+                <li><a class="li-color" href="#contact">Contact</a></li>
+            </ul>
+            <button class="burger" id="burger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <canvas id="canvas1"></canvas>
+        <script src="src/script.js"></script>
+        <div class="header-area">
+            <div class="header-text">
+                <h1>Hello, welcome to my Portfolio.</h1>
+                <p class="subtitle">My name is Melanie Lara</p>
+                <div class="button-container">
+                    <div class="button"><a href="#about-me">About me</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sub-section" id="about-me">
+        <div class="information">
+            <h2>About Me</h2>
+            <p>Hello. My name is Lara. I am a Web Developer and College student with a passion to code.</p>
+        </div>
+        <div class="shot-container">
+            <img class="shot" src="src/images/IMG_0152.PNG" alt="persona"/>
+        </div>
+    </section>
+    <section class="alt-sub-section" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-tile">
+                <img class="project-image" src="src/images/E52XIh6VIAAsK50.jpg" alt="Project One Image"/>
+                <h3>Project One</h3>
+                <p class="subtext">
+                    This is my project and some text about it. I enjoyed making this project.
+                </p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="github.com/m-lara2020">View here</a></p>
+            </div>
+            <div class="project-tile">
+                <img class="project-image" src="src/images/E5vL3L8WEAEBAFu.jpg" alt="Project One Image"/>
+                <h3>Project Two</h3>
+                <p class="subtext">
+                    This is my project and some text about it. I enjoyed making this project.
+                </p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="github.com/m-lara2020">View here</a></p>
+            </div>
+            <div class="project-tile">
+                <img class="project-image" src="src/images/E5Xy7OvUcAMf9HD.jpg" alt="Project One Image"/>
+                <h3>Project Three</h3>
+                <p class="subtext">
+                    This is my project and some text about it. I enjoyed making this project.
+                </p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="github.com/m-lara2020">View here</a></p>
+            </div>
+            <div class="project-tile">
+                <img class="project-image" src="src/images/E5YPUILVoAMVn9h.jpg" alt="Project One Image"/>
+                <h3>Project Four</h3>
+                <p class="subtext">
+                    This is my project and some text about it. I enjoyed making this project.
+                </p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="github.com/m-lara2020">View here</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <div class="contact-box">
+            <h2>Contact me</h2>
+            <form action="https://formsubmit.co/melanie.lara.fmtc@gmail.com" method="POST">
+                <input type="email" class="input-field" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <textarea type="text" class="input-field text-area" placeholder="Message" name="textarea" required></textarea>
+                <button type="submit" type="reset" class="form-btn">Send Message</button>
+            </form>
+        </div>
+    </footer>
+
+    <a href="#" class="top-arrow">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <script src="src/app.js"></script>
+    <script src="src/b2tb.js"></script>
+</body>
+</html>
