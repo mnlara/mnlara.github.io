@@ -367,7 +367,7 @@ footer {
     height: 400px;
 }
 
-.contact-box {
+/*.contact-box {
     margin-top: 35px;
     width: 26%;
     background-color: #1F1E33;
@@ -427,5 +427,5 @@ form {
 .form-btn:hover {
     box-shadow: 0 5px 50px 0 #E0D753 inset, 0 5px 50px 0 #E0D753 inset, 0 5px 50px 0 #E0D753 inset, 0 5px 50px 0 #E0D753 inset;
     /*text-shadow: 0 0 5px #1f1f1f, 0 0 5px #1f1f1f;
-    color: #1F1E33;*/
-}
+    color: #1F1E33;
+}*/
