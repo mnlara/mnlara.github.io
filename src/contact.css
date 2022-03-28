@@ -6,6 +6,16 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+#canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #100F1A;
+  z-index: -1;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -13,9 +23,9 @@ body {
     min-height: 100vh;
     padding: 40px;
     background: #100F1A;
-  }
+}
 
-  .container {
+.container {
     max-width: 800px;
     background: #1F1E33;
     width: 800px;
@@ -23,122 +33,124 @@ body {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     border-radius: 15px;
     height: 550px;
-  }
+}
 
-  .container .text {
+.container .text {
     text-align: center;
     font-size: 60px;
     font-weight: 600;
-    background: -webkit-linear-gradient(right, #E0D753, #FF99CC, #E0D753, #FF99CC);
+    background: -webkit-linear-gradient(right, #FF99CC, #E0D753, #FF99CC, #E0D753);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
 
-  .container form {
+.container form {
     padding: 30px 0 0 0;
-  }
+}
 
-  .container form .form-row {
+.container form .form-row {
     display: flex;
     margin: 32px 0;
-  }
+}
 
-  form .form-row .input-data {
+form .form-row .input-data {
     width: 100%;
     height: 40px;
     margin: 0 20px;
     position: relative;
-  }
+    color: #E0D753;
+}
 
-  form .form-row .textarea {
+form .form-row .textarea {
     height: 70px;
-  }
+}
 
-  .input-data input,
-  .textarea textarea {
+.input-data input,
+.textarea textarea {
     display: block;
     width: 100%;
     border: none;
     height: 100%;
-    font-size: 17px;
+    font-size: 15px;
     background: transparent;
     border-bottom: 2px solid #999;
-  }
+    color: white;
+}
 
-  .input-data input:focus ~ label, .textarea textarea:focus ~ label,
-  .input-data input:valid ~ label, .textarea textarea:valid ~ label {
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label {
     transform: translateY(-20px);
     font-size: 19px;
     color: #FF99CC;
-  }
+}
 
-  .textarea textarea {
+.textarea textarea {
     resize: none;
     padding-top: 10px;
-  }
+}
 
-  .input-data label {
+.input-data label {
     position: absolute;
     pointer-events: none;
     bottom: 10px;
     font-size: 16px;
     transition: all 0.3s ease;
-  }
+}
 
-  .textarea label {
+.textarea label {
     width: 100%;
     bottom: 40px;
     background: transparent;
-  }
+}
 
-  .input-data .underline {
+.input-data .underline {
     position: absolute;
     bottom: 0;
     height: 2px;
     width: 100%;
-  }
+}
 
-  .input-data .underline:before {
+.input-data .underline:before {
     position: absolute;
     content: "";
     height: 2px;
     width: 100%;
-    background: #3498db;
+    background: #E0D753;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
-  }
+}
 
-  .input-data input:focus ~ .underline:before,
-  .input-data input:valid ~ .underline:before,
-  .textarea textarea:focus ~ .underline:before,
-  .textarea textarea:valid ~ .underline:before {
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
     transform: scale(1);
-  }
+}
 
-  .submit-btn .input-data {
+.submit-btn .input-data {
     overflow: hidden;
     height: 45px!important;
     width: 25%!important;
-  }
+}
 
-  .submit-btn .input-data .inner {
+.submit-btn .input-data .inner {
     height: 100%;
     width: 300%;
     position: absolute;
     left: -100%;
     background: -webkit-linear-gradient(right, #E0D753, #FF99CC, #E0D753, #FF99CC);
     transition: all 0.4s;
-  }
+}
 
-  .submit-btn .input-data:hover .inner {
+.submit-btn .input-data:hover .inner {
     left: 0;
-  }
+}
 
-  .submit-btn .input-data input {
+.submit-btn .input-data input {
     background: none;
     border: none;
-    color: #fff;
+    color: #1F1E33;
     font-size: 17px;
     font-weight: 500;
     text-transform: uppercase;
@@ -146,26 +158,26 @@ body {
     cursor: pointer;
     position: relative;
     z-index: 2;
-  }
+}
 
-  @media (max-width: 700px) {
-    .container .text {
+@media (max-width: 700px) {
+  .container .text {
       font-size: 30px;
-    }
-
-    .container form {
-      padding: 10px 0 0 0;
-    }
-
-    .container form .form-row {
-      display: block;
-    }
-
-    form .form-row .input-data {
-      margin: 35px 0!important;
-    }
-    
-    .submit-btn .input-data {
-      width: 40%!important;
-    }
   }
+
+  .container form {
+      padding: 10px 0 0 0;
+  }
+
+  .container form .form-row {
+      display: block;
+  }
+
+  form .form-row .input-data {
+      margin: 35px 0!important;
+  }
+    
+  .submit-btn .input-data {
+      width: 40%!important;
+  }
+}

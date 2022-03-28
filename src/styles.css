@@ -254,7 +254,7 @@ p {
 .sub-section {
     display: flex;
     justify-content: space-around;
-    padding: 80px;
+    padding: 200px 80px;
     background: linear-gradient(180deg, #FF99CC, #E0D753, rgb(204, 204, 255));
 }
 
@@ -419,7 +419,7 @@ footer {
 }
 /*FOOTER ENDS HERE*/
 
-.contact-box {
+/*.contact-box {
     margin-top: 35px;
     width: 26%;
     background-color: #1F1E33;
