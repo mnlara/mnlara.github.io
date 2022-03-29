@@ -243,6 +243,7 @@ h1::after {
 /*ABOUT SECTION STARTS HERE*/
 h2 {
     font-size: 50px;
+    padding-bottom: 20px;
 }
 
 p {
@@ -254,7 +255,7 @@ p {
 .sub-section {
     display: flex;
     justify-content: space-around;
-    padding: 200px 80px;
+    padding: 300px 80px;
     background: linear-gradient(180deg, #FF99CC, #E0D753, rgb(204, 204, 255));
 }
 

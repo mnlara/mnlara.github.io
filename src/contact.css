@@ -134,6 +134,8 @@ form .form-row .textarea {
     width: 25%!important;
 }
 
+
+
 .submit-btn .input-data .inner {
     height: 100%;
     width: 300%;
@@ -141,6 +143,7 @@ form .form-row .textarea {
     left: -100%;
     background: -webkit-linear-gradient(right, #E0D753, #FF99CC, #E0D753, #FF99CC);
     transition: all 0.4s;
+
 }
 
 .submit-btn .input-data:hover .inner {
