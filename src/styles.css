@@ -70,10 +70,6 @@ li{
 .li-color {
     color: #a0a0a0;
     position: relative;
-    opacity: 0;
-    transform: translateY(3rem);
-    animation: fadeInUp 2s ease 
-    calc(var(--typewriterSpeed) + 3s) forwards;
     text-decoration: none;
 }
 
@@ -95,6 +91,67 @@ li{
 .li-color:hover:after {
     width: 100%;
 }
+
+/*SOCIALS STARTS HERE*/
+.socials {
+    display: flex;
+    padding-right: 25px;
+    padding-left: 5px;
+}
+
+.social {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.icon:hover {
+    fill: #BFBFBF;
+    opacity: 1;
+}
+/*SOCIALS ENDS HERE*/
+
+/*NAV BURGER STARTS HERE*/
+.burger {
+    display: none;
+}
+
+.burger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .burger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: center;
+    }
+
+    ul {
+        display: none;
+        background-color: #484b5f;
+        margin: 0px;
+    }
+    
+    ul.show {
+        display: block;
+        transition: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #484b5f;
+    }
+
+    .socials {
+        display: none;
+    }
+}
+/*NAV BURGER ENDS HERE*/
 /*NAV BAR ENDS HERE*/
 
 /*ANIMATED TEXT STARTS HERE*/
@@ -223,21 +280,6 @@ h1::after {
                0 0 6px 2px #3E3C66;
 }
 /*ABOUT BUTTON ENDS HERE*/
-
-/*SOCIALS STARTS HERE*/
-.socials {
-    display: flex;
-    padding-right: 25px;
-    padding-left: 5px;opacity: 0;
-    animation: fadeInUp 2s ease 
-    calc(var(--typewriterSpeed) + 3s) forwards;
-}
-
-.social {
-    margin-right: 20px;
-    margin-left: 5px;
-}
-/*SOCIALS ENDS HERE*/
 /*HEADER ENDS HERE*/
 
 /*ABOUT SECTION STARTS HERE*/
@@ -279,6 +321,7 @@ p {
 @media only screen and (max-width: 1000px) {
     .shot {
         max-width: 100%;
+
     }
 }
 /*ABOUT SECTION ENDS HERE*/
@@ -329,47 +372,7 @@ hr {
 }
 /*PROJECT SECTION ENDS HERE*/
 
-/*NAV BURGER STARTS HERE*/
-.burger {
-    display: none;
-}
 
-.burger:focus {
-    outline: 0;
-}
-
-@media only screen and (max-width: 1000px) {
-    .burger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: center;
-    }
-
-    ul {
-        display: none;
-        background-color: #484b5f;
-        margin: 0px;
-    }
-    
-    ul.show {
-        display: block;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #484b5f;
-    }
-
-    .logo {
-        display: none;
-    }
-}
-/*NAV BURGER ENDS HERE*/
 
 /*TOP ARROW STARTS HERE*/
 .top-arrow {
