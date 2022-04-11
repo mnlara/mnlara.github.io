@@ -45,7 +45,7 @@
       this.radius = radius;
       this.count = 0;
     };
-  
+
     Particle.prototype.draw = function(){
       this.radius += Math.sin(this.count*0.1);
   
