@@ -166,10 +166,14 @@ h1 {
     position: relative;
     color: #E0D753;
     width: max-content;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 
+    calc(var(--typewriterSpeed)) forwards;
 }
 
 
-h1::before,
+/*h1::before,
 h1::after {
     content: '';
     position: absolute;
@@ -190,7 +194,7 @@ h1::after {
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterChar)) 1s forwards,
         blink 750ms steps(31) infinite;
-}
+}*/
 
 .subtitle {
     font-size: 2vw;
@@ -202,7 +206,7 @@ h1::after {
     calc(var(--typewriterSpeed) + 1s) forwards;
 }
 
-@keyframes typewriter {
+/*@keyframes typewriter {
     to { 
         left: 100%;
     }
@@ -212,7 +216,7 @@ h1::after {
     to {
         background: transparent;
     }
-}
+}*/
 
 @keyframes fadeInUp {
     to {
@@ -327,7 +331,7 @@ p {
 /*ABOUT SECTION ENDS HERE*/
 
 /*PROJECT SECTION STARTS HERE*/
-.alt-sub-section {
+/*.alt-sub-section {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -371,6 +375,26 @@ hr {
     color: coral;
 }
 /*PROJECT SECTION ENDS HERE*/
+
+.projects .carousel .card {
+background: blue;
+border-radius: 6px;
+padding: 25px 35px;
+}
+
+.projects .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid red;
+}
 
 
 

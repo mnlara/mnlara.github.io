@@ -10,7 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/73c36f1a62.js" crossorigin="anonymous"></script>
 
-    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
 </head>
 <body>
     <header>
@@ -31,7 +36,7 @@
             <ul id="nav-list">
                 <li><a class="li-color" href="#about-me">About</a></li>
                 <li><a class="li-color" href="#projects">Projects</a></li>
-                <li><a class="li-color" href="contact.html">Contact</a></li>
+                <li><a class="li-color" href="contact.html" target="_blank">Contact</a></li>
             </ul>
             <button class="burger" id="burger">
                 <i class="fas fa-bars"></i>
@@ -57,7 +62,7 @@
             <img class="shot" src="src/images/IMG_0152.PNG" alt="persona"/>
         </div>
     </section>
-    <section class="alt-sub-section" id="projects">
+    <!--<section class="alt-sub-section" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project-tile">
@@ -97,7 +102,51 @@
                 <p class="subtext"><a class="project-link" href="github.com/m-lara2020">View here</a></p>
             </div>
         </div>
+    </section>-->
+
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">Recent Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E52XIh6VIAAsK50.jpg" alt="">
+                        <div class="text">Project name</div>
+                        <p>Infomration about project 1</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E5vL3L8WEAEBAFu.jpg" alt="">
+                        <div class="text">Project name</div>
+                        <p>Infomration about project 2</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E5Xy7OvUcAMf9HD.jpg" alt="">
+                        <div class="text">Project name</div>
+                        <p>Infomration about project 3</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E5YPUILVoAMVn9h.jpg" alt="">
+                        <div class="text">Project name</div>
+                        <p>Infomration about project 4</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E52XIh6VIAAsK50.jpg" alt="">
+                        <div class="text">for more prjects</div>
+                        <p>click here for archived projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
     
     <footer>
         <div class="footer-container">
