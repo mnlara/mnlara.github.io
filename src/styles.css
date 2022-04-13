@@ -199,7 +199,7 @@ h1::after {
 .subtitle {
     font-size: 2vw;
     font-weight: 400;
-    color: #FF99CC;
+    color: #45444D;
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease 
@@ -245,7 +245,7 @@ h1::after {
     margin-bottom: 200px;*/
 }
 
-/*ABOUT BUTTON STARTS HERE*/
+/*ABOUT BUTTON STARTS HERE
 .button-container {
     position: absolute;
     top: 80%;
@@ -287,7 +287,7 @@ h1::after {
 /*HEADER ENDS HERE*/
 
 /*ABOUT SECTION STARTS HERE*/
-h2 {
+/*h2 {
     font-size: 50px;
     padding-bottom: 20px;
 }
@@ -330,13 +330,165 @@ p {
 }
 /*ABOUT SECTION ENDS HERE*/
 
+
+
+/* all similar content styling codes */
+section{
+    padding: 200px 0;
+    background-color: #1F1E33;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about {
+    font-family: 'Roboto Mono', monospace;
+}
+.about .about-content
+ {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+    background: -webkit-linear-gradient(right, #FF99CC, #E0D753, #FF99CC, #E0D753);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #807332;
+    transform: translateX(-50%);
+}
+
+
+
+/* about section styling */
+
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 25px;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #807332;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #807332;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.about .about-content .right a:hover{
+    color: #807332;
+    background: none;
+}
+
+
+
+
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    
+    .about .about-content .right .text,
+     .left .text{
+        font-size: 19px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*PROJECT SECTION STARTS HERE*/
-/*.alt-sub-section {
+.alt-sub-section {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 80px;
-    background: linear-gradient(180deg, rgb(204, 204, 255),  white);
+    background: linear-gradient(180deg, #1f1e33, #3E3C66, rgb(204, 204, 255));
 }
 
 .project-tile {
@@ -376,7 +528,7 @@ hr {
 }
 /*PROJECT SECTION ENDS HERE*/
 
-.projects .carousel .card {
+/*.projects .carousel .card {
 background: blue;
 border-radius: 6px;
 padding: 25px 35px;
@@ -386,6 +538,7 @@ padding: 25px 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .projects .carousel .card img{
@@ -394,7 +547,7 @@ padding: 25px 35px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid red;
-}
+}*/
 
 
 
