@@ -168,7 +168,7 @@ h1 {
     width: max-content;
     opacity: 0;
     transform: translateY(3rem);
-    animation: fadeInUp 2s ease 
+    animation: fadeInUp ease 
     calc(var(--typewriterSpeed)) forwards;
 }
 
@@ -199,7 +199,7 @@ h1::after {
 .subtitle {
     font-size: 2vw;
     font-weight: 400;
-    color: #45444D;
+    color: #8F8D9E;
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease 
@@ -345,8 +345,7 @@ section{
 .about {
     font-family: 'Roboto Mono', monospace;
 }
-.about .about-content
- {
+.about .about-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -383,7 +382,7 @@ section .title::before{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
+    height: 500px;
     width: 400px;
     object-fit: cover;
     border-radius: 100px;
@@ -395,29 +394,322 @@ section .title::before{
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #EFECFE;
 }
 
 .about .about-content .right p{
     text-align: justify;
     font-size: 25px;
+    color: #AAA8BE;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: #807332;
-    color: #fff;
+    background: #FF99CC;
+    color: #1f1e33;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #807332;
+    border: 2px solid #FF99CC;
     transition: all 0.3s ease;
     text-decoration: none;
 }
 .about .about-content .right a:hover{
-    color: #807332;
+    color: #FF99CC;
     background: none;
 }
+
+
+
+
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    
+    .about .about-content .right .text,
+     .left .text{
+        font-size: 19px;
+    }
+}
+/*about section end here*/
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.project {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3E3C66;
+    overflow: hidden;
+}
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border-top: 1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+    margin: 30px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.card-image {
+    grid-area: image;
+    background: url("../src/images/minesweeper.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+    transform: translateZ(30px);
+}
+
+.card-text .code {
+    color: #E0D753;
+    font-size: 13px;
+}
+
+.card-text p {
+    color: #DAD0FF;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+    color: #FF99CC;
+}
+
+.card-text a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+/*card2*/
+.card-image2 {
+    grid-area: image;
+    background: url("../src/images/tiktok3.svg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text2 {
+    grid-area: text;
+    margin: 25px;
+    transform: translateZ(30px);
+}
+
+.card-text2 .code {
+    color: #E0D753;
+    font-size: 13px;
+}
+
+.card-text2 p {
+    color: #DAD0FF;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.card-text2 h2 {
+    margin-top: 0px;
+    font-size: 28px;
+    color: #FF99CC;
+}
+
+.card-text2 a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*card3*/
+.card-image3 {
+    grid-area: image;
+    background: url("../src/images/E52XIh6VIAAsK50.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text3 {
+    grid-area: text;
+    margin: 25px;
+    transform: translateZ(30px);
+}
+
+.card-text3 .code {
+    color: #E0D753;
+    font-size: 13px;
+}
+
+.card-text3 p {
+    color: #DAD0FF;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.card-text3 h2 {
+    margin-top: 0px;
+    font-size: 28px;
+    color: #FF99CC;
+}
+
+.card-text3 a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*card4*/
+.card-image4 {
+    grid-area: image;
+    background: url("../src/images/rings.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text4 {
+    grid-area: text;
+    margin: 25px;
+    transform: translateZ(30px);
+}
+
+.card-text4 .code {
+    color: #E0D753;
+    font-size: 13px;
+}
+
+.card-text4 p {
+    color: #DAD0FF;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.card-text4 h2 {
+    margin-top: 0px;
+    font-size: 28px;
+    color: #FF99CC;
+}
+
+.card-text4 a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 1000px) {
+    .projects-cards {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 100%;
+    }
+}
+
+.project {
+    font-family: 'Roboto Mono', monospace;
+}
+.project .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
 
 
 
@@ -475,14 +767,7 @@ section .title::before{
 
 
 
-
-
-
-
-
-
-
-/*PROJECT SECTION STARTS HERE*/
+/*PROJECT SECTION STARTS HERE
 .alt-sub-section {
     display: flex;
     flex-direction: column;
