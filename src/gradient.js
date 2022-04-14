@@ -45,7 +45,7 @@
       this.radius = radius;
       this.count = 0;
     };
-  
+
     Particle.prototype.draw = function(){
       this.radius += Math.sin(this.count*0.1);
   
@@ -74,11 +74,11 @@
   
   
     var colorTips = [
-      '#F13832',
-      '#FD6F3E',
-      '#47E892',
-      '#41D6E5',
-      '#FE2FA6'
+      '#671D99',
+      '#4F8045',
+      '#FF99CC',
+      '#E0D753',
+      '#8F8D9E'
     ]
   
     //function Particle(color,x,y,circleSize,radius){

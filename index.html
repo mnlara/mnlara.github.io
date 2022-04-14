@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio</title>
+    <title>Lara</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="src/images/ML.jpg">
     <link rel="stylesheet" href="src/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/73c36f1a62.js" crossorigin="anonymous"></script>
 
-    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
 </head>
 <body>
     <header>
@@ -31,7 +37,7 @@
             <ul id="nav-list">
                 <li><a class="li-color" href="#about-me">About</a></li>
                 <li><a class="li-color" href="#projects">Projects</a></li>
-                <li><a class="li-color" href="contact.html">Contact</a></li>
+                <li><a class="li-color" href="contact.html" target="_blank">Contact</a></li>
             </ul>
             <button class="burger" id="burger">
                 <i class="fas fa-bars"></i>
@@ -40,15 +46,32 @@
         <canvas id="canvas1"></canvas>
         <div class="header-area">
             <div class="header-text">
-                <h1>Hello, welcome to my Portfolio.</h1>
-                <p class="subtitle">My name is Melanie Lara</p>
-                <div class="button-container">
+                <h1>Hello, My name is Melanie Lara</h1>
+                <p class="subtitle">Welcome to my Portfolio.</p>
+                <!--<div class="button-container">
                     <div class="button"><a href="#about-me">About me</a></div>
-                </div>
+                </div>-->
             </div>
         </div>
     </header>
-    <section class="sub-section" id="about-me">
+    <section class="about" id="about-me">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="src/images/IMG_0152.PNG" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Melanie and I'm a <span style="color: #FF99CC;">Developer</span></div>
+                    <p>That is not me on the left. I'm a freelance Web Developer trying to make a living. Working on this porfolio was the bane of my existance. Don't look at the code. I promise you will not like what you see. It's as messy as my bedroom and I have taken out the trash yet. Beside this is just the starter. Will obviously improve from today. Spare a penny for the poor and I might pay you back 10 fold.</p>
+                    <a href="contact.html">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--<section class="sub-section" id="about-me">
         <div class="information">
             <h2>About Me</h2>
             <p>Hello. My name is Lara. I am a Web Developer and College student with a passion to code.</p>
@@ -56,8 +79,55 @@
         <div class="shot-container">
             <img class="shot" src="src/images/IMG_0152.PNG" alt="persona"/>
         </div>
+    </section>-->
+
+    <section class="project" id="projects">
+        <div class="max-widt">
+            <h2 class="title">Recent Projects</h2>
+            <div class="about-content">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-text">
+                        <span class="code">JavaScript</span>
+                        <h2>Minesweeper</h2>
+                        <p>Favorite game. 100% would recommend play. The code doesn't always work right.</p>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image2"></div>
+                    <div class="card-text2">
+                        <span class="code">Database + JavaScript</span>
+                        <h2>TikTok</h2>
+                        <p>Recreation of cringe site. Come see it. Could be better. <span style="font-size: 10px; color:blueviolet">maybe</span></p>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image3"></div>
+                    <div class="card-text3">
+                        <span class="code">?</span>
+                        <h2>?</h2>
+                        <p>What's this? A mystery card? Jk it might be Chess or something.</p>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image4"></div>
+                    <div class="card-text4">
+                        <span class="code">E-Commerce</span>
+                        <h2>Aesthetics</h2>
+                        <p>Promise its the actual good stuff. Not cheap ones you can buy at a flea market.</p>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="alt-sub-section" id="projects">
+
+
+
+    <!--<section class="alt-sub-section" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project-tile">
@@ -97,7 +167,51 @@
                 <p class="subtext"><a class="project-link" href="github.com/m-lara2020">View here</a></p>
             </div>
         </div>
-    </section>
+    </section>-->
+
+    <!--<section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">Recent Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E52XIh6VIAAsK50.jpg" alt="">
+                        <div class="text">Project name</div>
+                        <p>Infomration about project 1</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E5vL3L8WEAEBAFu.jpg" alt="">
+                        <div class="text">Project name</div>
+                        <p>Infomration about project 2</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E5Xy7OvUcAMf9HD.jpg" alt="">
+                        <div class="text">Project name</div>
+                        <p>Infomration about project 3</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E5YPUILVoAMVn9h.jpg" alt="">
+                        <div class="text">Project name</div>
+                        <p>Infomration about project 4</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="src/images/E52XIh6VIAAsK50.jpg" alt="">
+                        <div class="text">for more prjects</div>
+                        <p>click here for archived projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
     
     <footer>
         <div class="footer-container">
@@ -116,10 +230,18 @@
     <a href="#" class="top-arrow">
         <i class="fas fa-chevron-up"></i>
     </a>
-    
+    <script src="src/edit.js"></script>
     <script src="src/stats.js"></script>
     <script src="src/gradient.js"></script>
     <script src="src/app.js"></script>
     <script src="src/b2tb.js"></script>
+    <script src="src/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+          glare: true,
+          reverse: true,
+          "max-glare": 0.5
+        });
+      </script>
 </body>
 </html>
