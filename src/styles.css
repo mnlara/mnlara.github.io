@@ -23,10 +23,52 @@ html {
 }
 /*JS ENDS HERE*/
 
+.cursor {
+    z-index: 1000;
+    position: absolute;
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 
+        0 0 20px red,
+        0 0 60px red,
+        0 0 100px red;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg)
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before {
+    content: '';
+    position:fixed;
+    background: red;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
+
+
 body {
     font-family: 'Roboto Mono', monospace;
     width: 100%;
     overflow: auto;   
+    height: 100vh;
+    cursor: none;
+
 }
 
 body::-webkit-scrollbar {
@@ -115,7 +157,7 @@ section {
     position: relative;
     text-decoration: none;
     font-size: 30px;
-    cursor: pointer;
+    cursor: none;
     display: none;
 }
 .menu-btn {
@@ -599,10 +641,12 @@ section .title::before{
     border: 2px solid #FF99CC;
     transition: all 0.3s ease;
     text-decoration: none;
+    cursor: none;
 }
 .about .about-content .right a:hover{
     color: #FF99CC;
     background: none;
+    cursor: none;
 }
 
 
@@ -684,7 +728,7 @@ section .title::before{
   border-left: 1px solid rgba(255,255,255,0.5);
     text-align: center;
     margin: 30px;
-    cursor: pointer;
+    cursor: none;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
@@ -1039,6 +1083,7 @@ padding: 25px 35px;
     opacity: 0;
     pointer-events: none;
     transition: all .4s;
+    cursor: none;
 }
 
 .top-arrow.active {

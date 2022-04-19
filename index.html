@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
+    <div class="cursor"></div>
     <header>
         <nav class="navbar">
             <div class="max-wid">
@@ -232,8 +233,32 @@
     <script src="src/app.js"></script>
     <script src="src/b2tb.js"></script>
     <script src="src/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+
+            cursor.style.top = y + "px";
+            cursor.style.left = x + "px";
+            cursor.style.display = "block";
+
+            function mouseStopped(){
+                cursor.style.display = "none";
+            }
+            clearTimeout(timeout);
+            timeout = setTimedout(mouseStopped, 1000);
+        });
+
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none"
+        });
+
+    </script>
     
-    <script>
+    <script type="text/javascript">
         VanillaTilt.init(document.querySelectorAll(".card"),{
           glare: true,
           reverse: true,
