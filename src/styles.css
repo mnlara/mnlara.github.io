@@ -23,10 +23,52 @@ html {
 }
 /*JS ENDS HERE*/
 
+.cursor {
+    z-index: 1000;
+    position: absolute;
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 
+        0 0 20px red,
+        0 0 60px red,
+        0 0 100px red;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg)
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before {
+    content: '';
+    position:fixed;
+    background: red;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
+
+
 body {
     font-family: 'Roboto Mono', monospace;
     width: 100%;
     overflow: auto;   
+    height: 100vh;
+    cursor: none;
+
 }
 
 body::-webkit-scrollbar {
@@ -48,7 +90,192 @@ section {
     background-color: white;
 }
 
-/*NAV BAR STARTS HERE*/
+
+.socials {
+    display: flex;
+    padding-right: 25px;
+    padding-left: 5px;
+}
+
+.social {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.icon:hover {
+    fill: #efecfe;
+    opacity: 1;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 10px;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+}
+.navbar.sticky{
+    padding: 12px 10px 15px 10px;
+    background: #1f1e33;
+}
+.navbar .max-wid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.max-wid{
+    padding: 0 10px;
+    margin: auto;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #a0a0a0;
+    font-size: 30px;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+
+}
+.navbar .menu li a:hover{
+    color: #efecfe;
+}
+.navbar.sticky .menu li a:hover{
+    color: #efecfe;
+}
+
+/* menu btn styling */
+
+.menu-btn{
+    color: #a0a0a0;
+    position: relative;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: none;
+    display: none;
+}
+.menu-btn {
+    color: #efecfe;
+}
+
+.menu-btn:after {
+    content: "";
+    position: absolute;
+    background-color: #FF99CC;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.menu-btn:hover:after {
+    width: 100%;
+}
+
+
+
+@media (max-width: 991px) {
+    .max-wid{
+        padding: 0 10px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .max-wid{
+        max-width: 930px;
+    }
+    .menu-btn:after {
+        content: "";
+        position: absolute;
+        background-color: #FF99CC;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+    .menu-btn:hover:after {
+        width: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-wid{
+        padding: 0 23px;
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .menu-btn:after {
+        content: "";
+        position: absolute;
+        background-color: #FF99CC;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+    .menu-btn:hover:after {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*NAV BAR STARTS HERE
 nav {
     display: flex;
     justify-content: space-between;
@@ -92,7 +319,7 @@ li{
     width: 100%;
 }
 
-/*SOCIALS STARTS HERE*/
+/*SOCIALS STARTS HERE
 .socials {
     display: flex;
     padding-right: 25px;
@@ -110,7 +337,7 @@ li{
 }
 /*SOCIALS ENDS HERE*/
 
-/*NAV BURGER STARTS HERE*/
+/*NAV BURGER STARTS HERE
 .burger {
     display: none;
 }
@@ -335,7 +562,7 @@ p {
 /* all similar content styling codes */
 section{
     padding: 200px 0;
-    background-color: #1F1E33;
+    background-color: #100F1A;
 }
 .max-width{
     max-width: 1300px;
@@ -414,10 +641,12 @@ section .title::before{
     border: 2px solid #FF99CC;
     transition: all 0.3s ease;
     text-decoration: none;
+    cursor: none;
 }
 .about .about-content .right a:hover{
     color: #FF99CC;
     background: none;
+    cursor: none;
 }
 
 
@@ -499,7 +728,7 @@ section .title::before{
   border-left: 1px solid rgba(255,255,255,0.5);
     text-align: center;
     margin: 30px;
-    cursor: pointer;
+    cursor: none;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
@@ -854,6 +1083,7 @@ padding: 25px 35px;
     opacity: 0;
     pointer-events: none;
     transition: all .4s;
+    cursor: none;
 }
 
 .top-arrow.active {
