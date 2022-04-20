@@ -346,6 +346,10 @@ section .title::before {
     justify-content: center;
 }
 
+.js-tilt-glare {
+    border-radius: 18px;
+}
+
 .card {
     display: grid;
     grid-template-columns: 300px;
