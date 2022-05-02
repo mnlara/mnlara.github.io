@@ -12,7 +12,6 @@ body {
     width: 100%;
     overflow: auto;   
     height: 100vh;
-    cursor: none;
 }
 
 body::-webkit-scrollbar {
@@ -48,33 +47,6 @@ section {
 }
 /* JS ENDS HERE */
 
-/* CUSTOM CURSOR STARTS HERE */
-.cursor {
-    z-index: 1000;
-    position: absolute;
-    background: #E0D753;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: colors 5s infinite;
-    transform: translate(-50%, -50%);
-    display: none;
-}
-
-@keyframes colors { 
-    0% {
-        filter: hue-rotate(60deg);
-    }
-    50% {
-        filter: hue-rotate(300deg);
-    }
-    100% {
-        filter: hue-rotate(60deg);
-    }
-}
-/* CUSTOM CURSOR ENDS HERE */
-
 /* HEADER STARTS HERE */
 header {
     height: 100vh;
@@ -97,14 +69,9 @@ header {
     margin-left: 5px;
 }
 
-.social a {
-    cursor: none;
-}
-
 .icon:hover {
     fill: #efecfe;
     opacity: 1;
-    cursor: none;
 }
 /* SOCIALS ENDS HERE */
 
@@ -161,7 +128,6 @@ header {
     position: relative;
     text-decoration: none;
     font-size: 30px;
-    cursor: none;
     display: none;
 }
 
@@ -318,13 +284,11 @@ section .title::before {
     border: 2px solid #FF99CC;
     transition: all 0.3s ease;
     text-decoration: none;
-    cursor: none;
 }
 
 .about .about-content .right a:hover {
     color: #FF99CC;
     background: none;
-    cursor: none;
 }
 /* ABOUT ME ENDS HERE */
 
@@ -364,7 +328,6 @@ section .title::before {
   border-left: 1px solid rgba(255,255,255,0.5);
     text-align: center;
     margin: 30px;
-    cursor: none;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
@@ -412,7 +375,6 @@ section .title::before {
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    cursor: none;
 }
 
 /* CARD 2 */
@@ -459,7 +421,6 @@ section .title::before {
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    cursor: none;
 }
 
 /* CARD 3 */
@@ -506,7 +467,6 @@ section .title::before {
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    cursor: none;
 }
 
 /* CARD 4 */
@@ -553,7 +513,6 @@ section .title::before {
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    cursor: none;
 }
 /* PROJECTS ENDS HERE */
 
@@ -575,7 +534,6 @@ section .title::before {
     opacity: 0;
     pointer-events: none;
     transition: all .4s;
-    cursor: none;
 }
 
 .top-arrow.active {
