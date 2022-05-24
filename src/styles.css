@@ -426,10 +426,12 @@ section .title::before {
 /* CARD 3 */
 .card-image3 {
     grid-area: image;
-    background: url("../src/images/d46bdf782ac403b942f6ce131a6157b5.png");
+    background: url("../src/images/2573598.png");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
+    background-color: #FFFFFF;
+
 }
 
 .card-text3 {
