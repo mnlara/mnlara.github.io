@@ -380,7 +380,7 @@ section .title::before {
 /* CARD 2 */
 .card-image2 {
     grid-area: image;
-    background: url("../src/images/tiktok3.svg");
+    background: url("../src/images/2573598.png");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
@@ -426,7 +426,7 @@ section .title::before {
 /* CARD 3 */
 .card-image3 {
     grid-area: image;
-    background: url("../src/images/2573598.png");
+    background: url("../src/images/tiktok3.svg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
@@ -474,7 +474,7 @@ section .title::before {
 /* CARD 4 */
 .card-image4 {
     grid-area: image;
-    background: url("../src/images/rings.png");
+    background: url("../src/images/114-1148070_8-bit-zelda-png-legend-of-zelda-8.png");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
