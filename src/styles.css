@@ -384,6 +384,7 @@ section .title::before {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
+    background-color: #FFFFFF;
 }
 
 .card-text2 {
@@ -430,8 +431,6 @@ section .title::before {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
-    background-color: #FFFFFF;
-
 }
 
 .card-text3 {
